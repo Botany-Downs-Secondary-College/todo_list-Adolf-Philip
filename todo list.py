@@ -1,10 +1,9 @@
-
 #Functions
 
 #Greets the User
 def greeting():
     name = input("What is your name? ")
-    print(f"Hello, {name}!")
+    print(f"Hello, {name}! \n")
 
 #Asks user to add task 
 def add_task(tasks):
@@ -15,11 +14,11 @@ def add_task(tasks):
 #Shows user current items in todo list
 def view_list(tasks):
     if not tasks:
-        print("Your todo list is empty.")
+        print(" \nYour todo list is empty.")
     else:
-        print("Here is your current todo list:")
+        print(" \nHere is your current todo list:")
         for i in tasks:
-            print(" - {}".format(i))
+            print(" - {} \n".format(i))
 
 #The main program
 def main():
@@ -29,8 +28,8 @@ def main():
         print("Please choose an option:")
         print("1. Add a task")
         print("2. View list")
-        print("3. Exit")
-        choice = input("Enter your choice (1, 2, or 3): ")
+        print("3. Exit \n")
+        choice = input("Enter your choice (1, 2, or 3):")
         if choice == "1":
             add_task(tasks)
         elif choice == "2":
